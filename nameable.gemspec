@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'nameable/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'nameable'
+  spec.name          = 'openjournals-nameable'
   spec.version       = Nameable::VERSION
   spec.authors       = ['Chris Horn']
   spec.email         = ['chorn@chorn.com']

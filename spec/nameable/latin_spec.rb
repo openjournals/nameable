@@ -153,6 +153,10 @@ describe Nameable::Latin do
       it_behaves_like :generalized_parsing, 'Dr. Sil C. van de Leemput DRP', ['Dr.', 'Sil', 'C.', 'van de Leemput', 'DRP']
     end
 
+    context 'with van Something last name' do
+      it_behaves_like :generalized_parsing, 'Dr. Bram van Ginneken DRP', ['Dr.', 'Bram', nil, 'van Ginneken', 'DRP']
+    end
+
     context "with an o'last-name" do
       ["O'Horn", 'O`Horn', "O' Horn"].each do |last|
         it_behaves_like :generalized_parsing, "Chris #{last}", [nil, 'Chris', nil, "O'Horn", nil]
