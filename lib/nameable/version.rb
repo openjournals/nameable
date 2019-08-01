@@ -1,3 +1,3 @@
 module Nameable
-  VERSION = '1.1.4'.freeze
+  VERSION = '1.1.6'.freeze
 end

@@ -141,7 +141,7 @@ describe Nameable::Latin do
 
     context 'with a multi word last name' do
       %w[mc vere von van da de del della di da pietro vanden du st la ter ten].each do |prefix|
-        it_behaves_like :generalized_parsing, "Chris #{prefix} Horn", [nil, 'Chris', nil, "#{prefix.downcase.capitalize} Horn", nil]
+        it_behaves_like :generalized_parsing, "Chris #{prefix} Horn", [nil, 'Chris', nil, "#{prefix} Horn", nil]
       end
     end
 
@@ -155,6 +155,10 @@ describe Nameable::Latin do
 
     context 'with van Something last name' do
       it_behaves_like :generalized_parsing, 'Dr. Bram van Ginneken DRP', ['Dr.', 'Bram', nil, 'van Ginneken', 'DRP']
+    end
+
+    context 'with Van (capitalized) Something last name' do
+      it_behaves_like :generalized_parsing, 'Dr. Bram Van Ginneken DRP', ['Dr.', 'Bram', nil, 'Van Ginneken', 'DRP']
     end
 
     context "with an o'last-name" do

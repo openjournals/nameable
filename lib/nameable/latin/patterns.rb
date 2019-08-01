@@ -33,6 +33,7 @@ module Nameable
 
       # http://www.onlineaspect.com/2009/08/17/splitting-names/
       LAST_NAME_PRE_DANGLERS = /^(mc|vere|von|van|der|da|de|del|della|di|da|pietro|vanden|du|st|la|ter|ten)$/i
+      # CASE_SENSITIVE_LAST_NAME_PRE_DANGLERS = /^(von|van|der|da|de|del|della|di|da|pietro|vanden|du|st|la|ter|ten)$/i
       O_LAST_NAME_PRE_CONCATS = /^(o'|o`|o")$/i
     end
   end
