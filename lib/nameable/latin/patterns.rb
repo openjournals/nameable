@@ -32,7 +32,7 @@ module Nameable
       SUFFIX_ABBREVIATION = /^[A-Z]\.?[A-Z]\.?[A-Z]?\.?$/ # 2-3 characters, possibly separated with '.'
 
       # http://www.onlineaspect.com/2009/08/17/splitting-names/
-      LAST_NAME_PRE_DANGLERS = /^(mc|vere|von|van|da|de|del|della|di|da|pietro|vanden|du|st|la|ter|ten)$/i
+      LAST_NAME_PRE_DANGLERS = /^(mc|vere|von|van|der|da|de|del|della|di|da|pietro|vanden|du|st|la|ter|ten)$/i
       O_LAST_NAME_PRE_CONCATS = /^(o'|o`|o")$/i
     end
   end

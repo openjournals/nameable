@@ -100,6 +100,8 @@ module Nameable
 
         if name[n] =~ Nameable::Latin::Patterns::LAST_NAME_PRE_DANGLERS
           @last = "#{name[n].downcase.capitalize} #{@last}"
+          @last.gsub!('Van Der', 'van der')
+          @last.gsub!('Van De', 'van de')
         elsif name[n] =~ Nameable::Latin::Patterns::O_LAST_NAME_PRE_CONCATS
           @last = "O'#{@last}"
         elsif name[n] =~ /\-/ && n > 0 && name[n - 1]
