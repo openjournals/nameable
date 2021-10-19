@@ -1,7 +1,0 @@
-languages:
-  Ruby: true
-  JavaScript: false
-  PHP: false
-exclude_paths:
-  - "data/app_c.csv"
-  - "data/yob2093.txt"
