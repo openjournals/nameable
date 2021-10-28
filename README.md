@@ -1,6 +1,6 @@
 # nameable
 
-[![Gem Version](https://badge.fury.io/rb/openjournals-nameable.svg)](http://badge.fury.io/rb/nameable)
+[![Gem Version](https://badge.fury.io/rb/openjournals-nameable.svg)](http://badge.fury.io/rb/openjournals-nameable)
 [![Build Status](https://github.com/openjournals/nameable/actions/workflows/tests.yml/badge.svg)](https://github.com/openjournals/nameable/actions/workflows/tests.yml)
 
 A library that provides parsing and normalization of people's names.
