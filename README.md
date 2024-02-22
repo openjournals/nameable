@@ -47,38 +47,4 @@ Nameable::Latin.new('Chris', 'Horn').ethnicity
 #=> {:rank=>593, :count=>51380, :percent_white=>86.75, :percent_black=>8.31, :percent_asian_pacific_islander=>0.84, :percent_american_indian_alaska_native=>1.16, :percent_two_or_more_races=>1.46, :percent_hispanic=>1.48}
 ```
 
-# Other uses
-
-I've included a little web service, which should be installed as "nameable_web_service" that requires sinatra.  It's been handy when paired with OpenRefine, if I'm working with a file and I am not going to be parsing with Ruby.  If you're reading this, that's probably not an issue for you, but I do think it's a nice way to show someone how to use OpenRefine in a more advanced way.
-
-# Inspiration
-
-By inspiration, I should really say "other projects from which I yanked their code, ideas, examples and data." At worst I'll make sure the other projects I looked at and borrowed from are credited here.
-
-# Security
-
-As of version `1.1.1`., the nameable gem is cryptographically signed. To be sure the gem you install hasn’t been tampered with, add my public key as a trusted certificate, and verify that nameable and any dependencies it has are also signed:
-
-```
-$ gem cert --add <(curl -Ls https://raw.github.com/chorn/nameable/master/certs/chorn.pem)
-$ gem install nameable -P HighSecurity
-```
-
-# References
-
-* [Open Refine](http://openrefine.org/) formerly [Google Refine](https://code.google.com/p/google-refine/)
-* [Help with splitting names](http://www.onlineaspect.com/2009/08/17/splitting-names/)
-* [First Names from the U.S. SSA](http://www.ssa.gov/oact/babynames/limits.html)
-* [Last Names from the Census](http://www.census.gov/topics/population/genealogy/data/2000_surnames.html)
-* [Data Science Toolkit](https://github.com/petewarden/dstk)
-* [Addressable](https://github.com/sporkmonger/addressable)
-
-# To-do
-
-1. Extract all of the US Census / Ethnicity / Asset stuff out of `Latin`. Yuck, that's ugly why did I ever do that?
-2. Rename `Latin` to be `US` or `English` because it's looks like I really only support English, and probably US English.
-3. Use named captures for all the regexs.
-4. Refactor the Ethnicity stuff into a class.
-5. Refactor parsing into a class.
-
--chorn
+This fork updates [the original gem](https://github.com/chorn/nameable) with custom tweaks
